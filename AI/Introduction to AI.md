@@ -11,8 +11,8 @@ AI is needed for:
 
 ## Types of AIs
 
-- Normal AI -> Manipulates the input to get the output. Example:- Translating text
-- Generative AI -> Generates stuff which is significantly different from input. Example:- Generating answer to questions
+- Normal AI -> Manipulates the input to get the output. Example -> Translating text
+- Generative AI -> Generates stuff which is significantly different from input. Example -> Generating answer to questions
 
 # AI Domains
 
@@ -28,7 +28,7 @@ AI is needed for:
 # Language related AI tasks
 
 Language AI tasks take text as input and perform various functions on them and gives output in same (like translate text) or different medium (like text to speech).
-For gen
+For Generative AI tasks, the output of the model is in text medium.
 
 ## Properties of text data
 
@@ -46,6 +46,7 @@ For gen
 # Speech related AI tasks
 
 These take audio as an input and perform various functions on them and gives output in same (like voice conversion) or different medium (like speech to text).
+For Generative AI tasks, the output of the model is in audio medium.
 
 ## Properties of audio data
 
@@ -64,3 +65,36 @@ The below models take into account the sequential nature of audio so that functi
 - Waveform Models
 - Siamese Networks
 
+# Image related AI tasks
+
+These take image as an input and perform various functions on them and gives output in same (like repair damaged images) or different medium (like extract text in a image).
+For Generative AI tasks, the output of the model is in image medium.
+
+## Properties of image data
+
+- Image data consist of pixels. Pixels are grid of data containing very small 2 dimensional information of an image. A pixel has a single colour.
+- These pixels can be grey-scale or colour.
+
+## Models used for processing audio data
+
+- Convolutional Neural Networks -> These detect patterns in images, learning hierarchical representations of visual features.
+- YOLO (You Only Look Once) -> Processes the image and detects objects within the image.
+- Generative Adversarial Network -> Generates real-looking images.
+
+# Anomaly Detection related AI tasks
+
+These detect anomalies in time series data.
+
+Example -> Fraud detection
+
+# Recommendations related AI tasks
+
+These categorises similar products or similar users together to recommend products to users
+
+Example -> E-commerce websites
+
+# Forecasting related AI tasks
+
+These take time series data and makes predictions based on past data.
+/commit
+Example -> Weather forecasting
