@@ -4,6 +4,10 @@ Machine learning is a subset of artificial intelligence that focuses on creating
 
 Inference is a process of getting a prediction by giving a data point.
 
+ > During the training process, the Training Data set is given to a learning algorithm as an input and it gives out the model(function) as an output.
+> During the prediction process, the model is provided with its input and it provides the predicted output.
+
+
 # Types of learning
 
 ## Supervised Machine Learning
@@ -13,7 +17,6 @@ In supervised machine learning, labelled data is used to train the model. Model 
 Some of the popular applications of supervised machine learning are disease detection, weather forecasting, stock price prediction, spam detection, and credit scoring. For example, in disease detection, the patient data is input to a machine learning model, and machine learning model predicts if a patient is suffering from a disease or not.
 
 > The point is that if a label can be found by using contemporary measures corresponding to a data, then supervised learning can be used.
-
 ## Unsupervised Machine Learning
 Unsupervised learning is generally used to understand relationships within a data set. Labels are not used or are not available.
 
@@ -36,6 +39,17 @@ Most popular among reinforcement learning applications are automated robots, aut
 It is used in case of continuous output is required. A numeric output is given. 
 
 Example -> House Price Predictor
+### Linear Regression
+
+This is done by fitting the data into a line. The slope and bias (y-intercept) is iteratively adjusted to perform the fitting.
+
+`Loss` is a number indicating how far the predicted value is from the actual value.
+We have to minimise the loss.
+
+One of the ways to calculate `loss` is to take a difference between predicted and actual value, and square it.
+
+> Squared difference for getting the loss
+
 ## Classification
 It is used in case of categorical output is required. A label/category is given as output.
 
@@ -54,5 +68,5 @@ Logistic regression is an algorithm for Binary classification.
 
 Logistic regression uses an S-shaped curve called the Sigmoid function to fit the data. The Sigmoid function takes any real valued number and squashes it into a range between 0 and 1.
 
-If the function returns a 
+Output from the Sigmoid function is to be compared with a threshold value of, say, 0.5. If output is more than 0.5, it would be classified as a true. And if less than 0.5, it will be classified as a false.
 
