@@ -8,7 +8,7 @@ AI is needed for:
 - Automation and Decision Making
 - Creative Support
 
-## Types of AIs
+# Types of AIs
 
 - Normal AI -> Manipulates the input to get the output. Example -> Translating text
 - Generative AI -> Generates stuff which is significantly different from input. Example -> Generating answer to questions
@@ -114,6 +114,6 @@ Deep Learning (DL) is a subcategory of ML which uses neural networks to learn fr
 - Reinforcement learning -> Agents that learn by interacting with the environment and receiving punishments and rewards.
 # Neural Networks
 
-Neural networks are made up of interconnected nodes or neurons in a layered strucutre that resemble the human brain.
+Neural networks are made up of interconnected nodes or neurons in a layered structure that resemble the human brain.
 
 Function Approximation-> Function approximation is a technique for estimating an unknown underlying function using historical observations from the domain.
