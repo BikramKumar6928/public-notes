@@ -1,4 +1,4 @@
-
+___
 #ai #notes 
 
 AI is capability of machines to mimic the cognitive abilities and problem-solving capabilities of human intelligence.
@@ -98,3 +98,23 @@ Example -> E-commerce websites
 These take time series data and makes predictions based on past data.
 
 Example -> Weather forecasting
+
+
+# Relationship between AI, ML and DL
+
+Artificial Intelligence (AI) is any machine that imitates human intelligence. Example:- Self-driving cars.
+
+Machine Learning (ML) are algorithms which learn from past data and predict outcome on new data.
+
+Deep Learning (DL) is a subcategory of ML which uses neural networks to learn from complex data and predict outcomes or generate new data.
+
+# Types of learning
+
+- Supervised learning -> Algorithm that learns from labelled data.
+- Unsupervised learning -> Algorithm that discovers patterns and structures in unlabelled data.
+- Reinforcement learning -> Agents that learn by interacting with the environment and receiving punishments and rewards.
+# Neural Networks
+
+Neural networks are made up of interconnected nodes or neurons in a layered strucutre that resemble the human brain.
+
+Function Approximation-> Function approximation is a technique for estimating an unknown underlying function using historical observations from the domain.
