@@ -32,3 +32,27 @@ Most popular among reinforcement learning applications are automated robots, aut
 
 # Types of Supervised Learning
 
+## Regression
+It is used in case of continuous output is required. A numeric output is given. 
+
+Example -> House Price Predictor
+## Classification
+It is used in case of categorical output is required. A label/category is given as output.
+
+Classification is a supervised machine learning technique used to categorise or assign data points into predefined classes or categories, based on their features or attributes. Classifier is trained on a labelled data set.
+
+Example -> Cat/Dog identifier
+
+It has the following subcategories:
+
+- Binary -> If the output is true or false. Example-> Spam Detector
+- Multi-class -> If the output has multiple categories. Example -> Sentiment Analysis. This is used to find if a given text is positive, negative or neutral sentiment.
+
+
+### Logistic Regression
+Logistic regression is an algorithm for Binary classification.
+
+Logistic regression uses an S-shaped curve called the Sigmoid function to fit the data. The Sigmoid function takes any real valued number and squashes it into a range between 0 and 1.
+
+If the function returns a 
+
