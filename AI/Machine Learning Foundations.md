@@ -28,3 +28,7 @@ Reinforcement learning uses algorithms that learn from outcomes (like interactin
 Most popular among reinforcement learning applications are automated robots, autonomous driving cars, and playing games.
 
 > Where we can interact with some environment and get positive and negative feedback, reinforcement learning can be used.
+
+
+# Types of Supervised Learning
+
