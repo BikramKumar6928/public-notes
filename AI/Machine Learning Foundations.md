@@ -70,3 +70,13 @@ Logistic regression uses an S-shaped curve called the Sigmoid function to fit th
 
 Output from the Sigmoid function is to be compared with a threshold value of, say, 0.5. If output is more than 0.5, it would be classified as a true. And if less than 0.5, it will be classified as a false.
 
+
+# Python Libraries
+
+```python
+from sklearn.linear_model import LogisticRegression # module used to train a model using Logistic Regression Approach. Takes the inputs and labels for training and takes inputs and predicts the trained value.
+from sklearn.model_selection import train_test_split # divides data into training and testing set
+from sklearn.preprocessing import StandardScaler # Standardizes data with mean of 0 and standard deviation of 1
+from sklearn.metrics import accuracy_score # It calculates the ratio of correctly predicted instances to the total number of instances in the data set.
+```
+
