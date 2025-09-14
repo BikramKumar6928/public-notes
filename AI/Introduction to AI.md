@@ -96,5 +96,5 @@ Example -> E-commerce websites
 # Forecasting related AI tasks
 
 These take time series data and makes predictions based on past data.
-/commit
+
 Example -> Weather forecasting
