@@ -39,3 +39,24 @@ Both the encoder and the decoder consist of many layers connected by the self-at
 
 A token is the smallest part of an input that an LLM can understand. A token can be a word. It could be an entire word. It could be part of a word or it could even be a punctuation symbol. A common word, such as apple, is a token. A word such as friendship is made up of two tokens, friend and ship. The number of tokens per word depend on the complexity of the text. For simple text which have simple words, you can assume one token per word on average. For complex text which have fewer common words, you can assume two to three tokens per word on average.
 
+## Embeddings
+
+Embeddings are numerical representation of a piece of text. The piece of text could be a word, could be a phrase, could be a sentence, could be a paragraph, or even one or more paragraphs. Embeddings make it easy for computers to understand the relationship between pieces of text.
+
+## Encoder model
+
+The encoder model take all the tokens of the input as an input and generates 1 embedding corresponding to each token. An additional embedding is created corresponding to the whole sentence. So the output of a encoder model is a list of tokens and the output is a list of vectors.
+
+## Retrieval Augmented Generation (RAG)
+
+The vector output of encoders can be used to perform a semantic search where vectors are generated from a corpus of data and stored in a vector database. When an input text is received, it is encoded to vectors and check the similarity of the encoded input against the similarity of each document in the database. And then you return the most similar or the most relevant document.
+
+This similar data can be provided to an LLM which can then use the content and its general knowledge to provide an informed answer. This whole architecture is called Retrieval Augmented Generation or RAG.
+
+## Decoder Model
+
+Decoder model takes multiple tokens as input and outputs the next token in the sequence based on the probability of the vocabulary, which they compute. The decoder only produces a single token at a time. We can always invoke a decoder over and over to generate as many new tokens as we want, but always producing a single token at a time. This is achieved using self-referential loops.
+
+## Encoder-Decoder Architecture
+
+In this architecture, basically we glue a decoder into an encoder, so as you can see here. They have been primarily being utilized for sequence-to-sequence tasks, like translation. This then takes a sentence as an input. It breaks it into multiple tokens. The tokens are then encoded into vectors. These vectors are used as an input to the decoder which generates the output tokens one by one.
