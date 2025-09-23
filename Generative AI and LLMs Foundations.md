@@ -23,7 +23,19 @@ Large language models are based on a deep learning architecture called transform
 
 Having a large number of parameters does not necessarily translate to better performance on any given task. In fact, if a model is too large and has too many parameters, it can potentially overfit to the training data.
 
-# Transformers
+## Transformers
 
-Transformer is an algorithm that is used for sequential data. It has a property of looking at all the data at the same time, thus allowing it to not forget about words which are separated far apart in a sentence.
+Transformer is an algorithm that is used for sequential data. It has the capability of looking at all the words at the same time, thus allowing it to not forget about words which are separated far apart in a sentence.
+
+RNNs can be used for sequential data, but the disadvantages of RNNs are that they cannot retain context of words which are separated from each other due to vanishing gradients problem. RNNs can only capture dependencies of nearby words.
+
+There is a mechanism in the transformer architecture known as self-attention mechanism. The mechanism adds context to the text. The self-attention mechanism that allows the model to weigh the importance of different words or tokens in a sequence relative to each other. This mechanism enables the model to capture long-range dependencies and contextual relationships within the input data, enhancing its ability to understand the context.
+
+The transformer architecture has two submodules -> an encoder and a decoder. The encoder module processes the input text and encodes into a series of numerical representations, also referred to as vectors (also called embeddings) that capture the contextual information of the input. And then the decoder module takes these encoded vectors and generates the output text.
+
+Both the encoder and the decoder consist of many layers connected by the self-attention mechanism.
+
+## Tokens
+
+A token is the smallest part of an input that an LLM can understand. A token can be a word. It could be an entire word. It could be part of a word or it could even be a punctuation symbol. A common word, such as apple, is a token. A word such as friendship is made up of two tokens, friend and ship. The number of tokens per word depend on the complexity of the text. For simple text which have simple words, you can assume one token per word on average. For complex text which have fewer common words, you can assume two to three tokens per word on average.
 
