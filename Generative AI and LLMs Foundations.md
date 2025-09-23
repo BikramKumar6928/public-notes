@@ -22,3 +22,8 @@ These models are generally referred as Large Language Models because they have a
 Large language models are based on a deep learning architecture called transformer. This allows them to pay selective attention to different parts of the input when making the next word prediction. This gives LLMs enhanced contextual understanding.
 
 Having a large number of parameters does not necessarily translate to better performance on any given task. In fact, if a model is too large and has too many parameters, it can potentially overfit to the training data.
+
+# Transformers
+
+Transformer is an algorithm that is used for sequential data. It has a property of looking at all the data at the same time, thus allowing it to not forget about words which are separated far apart in a sentence.
+
