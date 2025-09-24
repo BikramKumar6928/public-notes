@@ -63,7 +63,7 @@ In this architecture, basically we glue a decoder into an encoder, so as you can
 
 # Prompt Engineering
 
-LLMs are geared towards text completion as they predict the next token in the input text. Because completion LLMs are trained to predict the next word on a large data set of internet text, rather than answering the question user wants. In this way, you cannot give instructions or ask questions to a completion LLM. Instead, you need to formulate your input as a prompt whose natural continuation is your desired output.
+LLMs are geared towards text completion as they predict the next token in the input text. Because completion LLMs are trained to predict the next word on a large data set of internet text, rather than answering the question user asked. So you cannot give instructions or ask questions to a completion LLM. Instead, you need to formulate your input as a prompt whose natural continuation is your desired output.
 
 ## Prompt
 
@@ -72,3 +72,11 @@ Prompt is the input or initial text provided to the large language model. Text p
 ## Prompt Engineering
 
 Prompt engineering is the process of iteratively refining a prompt for the purpose of eliciting a particular style of response.
+
+## Instruction Tuning
+
+Instruction Tuning is a critical step in LLM alignment. It involves fine-tuning a pre-trained LLM on a varied set of instructions, each paired with a desired output.
+
+### Reinforcement Learning from Human Feedback (RLHF)
+
+RLHF is a model training procedure that is applied to a fine-tuned language model to further align model behavior with human preferences and instruction following. So in this case, what we do is human annotators write prompts and compare the model outputs. The human feedback is subsequently used to train a reward model, which learns patterns in the preferences of the human annotators and can then automate preference decisions.
