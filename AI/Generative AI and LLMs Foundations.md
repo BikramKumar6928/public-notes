@@ -80,3 +80,19 @@ Instruction Tuning is a critical step in LLM alignment. It involves fine-tuning 
 ### Reinforcement Learning from Human Feedback (RLHF)
 
 RLHF is a model training procedure that is applied to a fine-tuned language model to further align model behavior with human preferences and instruction following. So in this case, what we do is human annotators write prompts and compare the model outputs. The human feedback is subsequently used to train a reward model, which learns patterns in the preferences of the human annotators and can then automate preference decisions.
+
+## Types of prompting
+
+### In context learning
+
+An LLM is conditioned with instructions or demonstrations of the task it is meant to complete. Note that it is not learning in the traditional sense as none of the parameters of the model are changing. What in-context learning means is that it has demonstrations of the tasks that the model is supposed to complete. An example of in context learning is K shot prompting.
+
+#### K shot prompting
+
+In this, when the LLM is given a prompt, the prompt contains examples of what the LLM needs to do. For example, if we want the LLM to translate some text, we would give the command to translate the text and give a K examples of sample translations. If the number of examples given is K, then it is called K shot prompting.
+
+### Chain of Thought prompting
+
+If you have a complicated task, then what we are going to do is we are going to prompt the model to break the problem into small chunks, exactly like you would solve it if you were solving it yourself, and then you break it into smaller parts, and then you solve each of these intermediate steps or each of these smaller parts.
+
+So 
