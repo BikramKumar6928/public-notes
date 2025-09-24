@@ -95,4 +95,22 @@ In this, when the LLM is given a prompt, the prompt contains examples of what th
 
 If you have a complicated task, then what we are going to do is we are going to prompt the model to break the problem into small chunks, exactly like you would solve it if you were solving it yourself, and then you break it into smaller parts, and then you solve each of these intermediate steps or each of these smaller parts.
 
-So 
+> The LLM provides the reasoning which it used to reach a logical point. This allows it to make sure that it does not make mistakes.
+
+# Hallucination
+
+Hallucination is basically means the model generated text that is non-factual and ungrounded. At times, statements that are nonsensical or factually incorrect are also considered to be hallucination.
+
+Retrieval Augmented systems hallucinate less than 0-shot LLMs.
+
+
+# Customizing LLMs with custom data
+
+It is possible that the LLM is not providing required information in a required format. There are 3 ways to customize LLM with custom data so that the responses are better
+
+## Prompt Engineering
+
+This is the quickest and fastest way to customize the LLM. Basically, the prompt is modified using techniques like K shot prompting to guide the LLM in providing responses based 
+
+
+
