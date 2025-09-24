@@ -60,3 +60,15 @@ Decoder model takes multiple tokens as input and outputs the next token in the s
 ## Encoder-Decoder Architecture
 
 In this architecture, basically we glue a decoder into an encoder, so as you can see here. They have been primarily being utilised for sequence-to-sequence tasks, like translation. This then takes a sentence as an input. It breaks it into multiple tokens. The tokens are then encoded into vectors. These vectors are used as an input to the decoder which generates the output tokens one by one.
+
+# Prompt Engineering
+
+LLMs are geared towards text completion as they predict the next token
+
+## Prompt
+
+Prompt is the input or initial text provided to the large language model. Text prompts are how users typically interact with large language models.
+
+## Prompt Engineering
+
+Prompt engineering is the process of iteratively refining a prompt for the purpose of eliciting a particular style of response.
