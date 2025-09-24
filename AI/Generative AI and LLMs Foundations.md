@@ -59,4 +59,4 @@ Decoder model takes multiple tokens as input and outputs the next token in the s
 
 ## Encoder-Decoder Architecture
 
-In this architecture, basically we glue a decoder into an encoder, so as you can see here. They have been primarily being utilized for sequence-to-sequence tasks, like translation. This then takes a sentence as an input. It breaks it into multiple tokens. The tokens are then encoded into vectors. These vectors are used as an input to the decoder which generates the output tokens one by one.
+In this architecture, basically we glue a decoder into an encoder, so as you can see here. They have been primarily being utilised for sequence-to-sequence tasks, like translation. This then takes a sentence as an input. It breaks it into multiple tokens. The tokens are then encoded into vectors. These vectors are used as an input to the decoder which generates the output tokens one by one.
