@@ -104,13 +104,32 @@ Hallucination is basically means the model generated text that is non-factual an
 Retrieval Augmented systems hallucinate less than 0-shot LLMs.
 
 
-# Customizing LLMs with custom data
+# Customising LLMs with custom data
 
-It is possible that the LLM is not providing required information in a required format. There are 3 ways to customize LLM with custom data so that the responses are better
+It is possible that the LLM is not providing required information in a required format. There are 3 ways to customise LLM with custom data so that the responses are better
 
 ## Prompt Engineering
 
-This is the quickest and fastest way to customize the LLM. Basically, the prompt is modified using techniques like K shot prompting to guide the LLM in providing responses based 
+This is the quickest and fastest way to customise the LLM. Basically, the prompt is modified using techniques like K shot prompting to guide the LLM in providing responses based. This is helpful when the LLM already understands topics that are necessary for the text generation.
+
+The drawback of using prompt engineering is that it adds latency to each request, as the prompts are injected for each input prompt.
 
 
+## Retrieval Augmented Generation (RAG)
 
+RAG can be used to hook the LLM with an enterprise knowledge base. This allows the LLM to respond with response which are more grounded in the knowledge base, so that it does not hallucinate much. This method can be used to fetch specific and exact information from the knowledge base, which may not be possible using just the model as it takes probabilistic guesses at next words. The LLM then uses the retrieved data to generate an informed response. Example:- Fetch the amount of money in user's account.
+
+RAG should be used when the data changes rapidly and a need for exact information surrounded by text for people to understand exists. This is also good when we want to mitigate hallucinations by grounding answers in enterprise data.
+
+The drawbacks are that this is more complex to setup as we need data stored in specific format. This also requires the data to be stored in a compatible format like vector database.
+## Fine tuning
+
+The LLM can be fine tuned if there is domain specific data. The LLM can learn on top of what it already knows (pre-trained data), thus allowing it to respond with domain specific or special skill that it has not already been trained upon. Fine tuning can also help when the response are required in a unique style in which the LLM does not responds by default.
+
+A way of doing fine tuning is add additional hidden layers on top of the hidden layers of the LLM. The purpose of the new hidden layers is to transform the already trained LLMs output into the domain specific output that is populated during the fine tuning step. This method also completes the training faster as all the layers do not have to be updated in every iteration as compared to a process where all the layers are updated.
+
+Once the training is done, the LLM is given prompt and the LLM generates output based on the knowledge it has learned during pre-training and fine-tuning.
+
+The benefits of fine tuning are:-
+- Improved Model Performance, as the model can better understand and generate contextually relevant responses.
+- Improved Model Efficiency, as the number of trainable parameters are reduced thus making the model more efficient
