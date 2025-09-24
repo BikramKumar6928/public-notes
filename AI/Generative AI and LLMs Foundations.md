@@ -124,7 +124,7 @@ RAG should be used when the data changes rapidly and a need for exact informatio
 The drawbacks are that this is more complex to setup as we need data stored in specific format. This also requires the data to be stored in a compatible format like vector database.
 ## Fine tuning
 
-The LLM can be fine tuned if there is domain specific data. The LLM can learn on top of what it already knows (pre-trained data), thus allowing it to respond with domain specific or special skill that it has not already been trained upon. Fine tuning can also help when the response are required in a unique style in which the LLM does not responds by default.
+The LLM can be fine tuned if there is domain specific data. The LLM can learn on top of what it already knows (pre-trained data), thus allowing it to respond with domain specific or special skill that it has not already been trained upon. Fine tuning can also help when the response are required in a unique style in which the LLM does not responds by default. Fine tuning also becomes important when the data required to adapt the LLM is too large to be held in context along with input prompt, making prompt engineering to not work. It is also a good idea when the latency increases with LLM + prompt engineering.
 
 A way of doing fine tuning is add additional hidden layers on top of the hidden layers of the LLM. The purpose of the new hidden layers is to transform the already trained LLMs output into the domain specific output that is populated during the fine tuning step. This method also completes the training faster as all the layers do not have to be updated in every iteration as compared to a process where all the layers are updated.
 
@@ -133,3 +133,14 @@ Once the training is done, the LLM is given prompt and the LLM generates output 
 The benefits of fine tuning are:-
 - Improved Model Performance, as the model can better understand and generate contextually relevant responses.
 - Improved Model Efficiency, as the number of trainable parameters are reduced thus making the model more efficient
+- No impact on Model latency, as no prompt injection is happening for every prompts.
+
+The drawbacks of fine tuning is that it requires a labelled dataset which can be expensive and time consuming to acquire.
+
+## Workflow for customising LLMs with data
+
+- Start with simple prompt for prompt engineering
+- Add few shot prompting
+- Add simple retrieval using RAG
+- Fine-tune the model
+- Optimise the retrieval on fine-tuned model
