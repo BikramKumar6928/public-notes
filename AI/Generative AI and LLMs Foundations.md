@@ -63,7 +63,7 @@ In this architecture, basically we glue a decoder into an encoder, so as you can
 
 # Prompt Engineering
 
-LLMs are geared towards text completion as they predict the next token
+LLMs are geared towards text completion as they predict the next token in the input text. Because completion LLMs are trained to predict the next word on a large data set of internet text, rather than answering the question user wants. In this way, you cannot give instructions or ask questions to a completion LLM. Instead, you need to formulate your input as a prompt whose natural continuation is your desired output.
 
 ## Prompt
 
