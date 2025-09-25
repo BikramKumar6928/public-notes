@@ -46,3 +46,27 @@ It contains deployment of Jupyter notebook in the cloud, with Conda to manage de
 
 It also contains a model catalog that can help data scientists to share their model with their team and work collaboratively.
 
+There is also model deployments that allow you to deploy models stored in the Model Catalog as HTTP endpoints on managed infrastructure, deploying machine learning models as web applications.
+
+Another feature is Data Science jobs which enable you to define and run a repeatable machine learning tasks on fully managed infrastructure.
+
+# AI Infrastructure
+
+## NVidia chips
+
+
+| Chip Name | Architecture      |
+| --------- | ----------------- |
+| A100      | Ampere            |
+| H100      | Hopper            |
+| H200      | Hopper            |
+| B200      | Blackwell         |
+| GB200     | Grace + Blackwell |
+
+
+
+![[nvidia-gpu-comparison.png]]
+
+RDMA
+
+Remote Data Memory Access allows netw
