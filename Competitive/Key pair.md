@@ -1,4 +1,4 @@
-#competetive #problem #array 
+#competetive #problem #array
 ## Problem
 Given an `int` array `a[]` and a number `x`, find a pair of numbers having sum equal to `x`.
 
@@ -15,7 +15,7 @@ If the said number is found, then the number `x -a[i]` and `a[i]` are the 2 numb
 ### Special case
 If the check for number present is done before adding the number to the Set, we can ensure that the same number is not being considered for both the numbers in the pair.
 
-If we want to not take same number as both the numbers in the pair, we can use a Map instead of a Set. The Map will contain the number and the frequency of the number. 
+If we want to not take same number as both the numbers in the pair, we can use a Map instead of a Set. The Map will contain the number and the frequency of the number.
 
 If the number is present more than once, then we can successfully take the number twice. Otherwise, the current number cannot be taken in the pair.
 

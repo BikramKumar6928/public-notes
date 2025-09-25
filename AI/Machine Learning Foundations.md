@@ -1,8 +1,8 @@
-#ai #notes 
+#ai #notes
 
 # What is Machine Learning
 
-Machine learning is a subset of artificial intelligence that focuses on creating computer systems that can learn and predict outcomes from given examples without being explicitly programmed using data to automatically learn. 
+Machine learning is a subset of artificial intelligence that focuses on creating computer systems that can learn and predict outcomes from given examples without being explicitly programmed using data to automatically learn.
 
 Inference is a process of getting a prediction by giving a data point.
 
@@ -22,7 +22,7 @@ Some of the popular applications of supervised machine learning are disease dete
 
 Types of Supervised Learning:
 ### Regression
-It is used in case of continuous output is required. A numeric output is given. 
+It is used in case of continuous output is required. A numeric output is given.
 
 Example -> House Price Predictor
 #### Linear Regression

@@ -1,4 +1,4 @@
-#array #competetive #problem 
+#array #competetive #problem
 
 # Problem
 
@@ -41,7 +41,7 @@ Now reverse the last `d` indices:-
 arr [4, 5, 1, 2, 3]
 ```
 
-## Code 
+## Code
 
 ```C++
 #include <bits/stdc++.h>

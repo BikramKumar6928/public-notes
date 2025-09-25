@@ -1,4 +1,4 @@
-#ai #notes 
+#ai #notes
 
 # What is Generative AI
 

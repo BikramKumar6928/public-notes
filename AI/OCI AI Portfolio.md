@@ -1,4 +1,4 @@
-#ai #notes 
+#ai #notes
 
 # AI Services Overview
 ## Language
@@ -7,7 +7,7 @@ Allows you to perform sophisticated text analysis at scale.
 
 Pre-trained models include language detection, sentiment analysis, key phrase extraction, text classification, named entity recognition, and personal identifiable information detection.
 
-Custom models can be trained for named entity recognition and text classification with domain-specific data sets. 
+Custom models can be trained for named entity recognition and text classification with domain-specific data sets.
 
 In text translation, neural machine translation is used to translate text across numerous languages.
 
@@ -71,7 +71,7 @@ Another feature is Data Science jobs which enable you to define and run a repeat
 
 ## RDMA
 
-Remote Data Memory Access allows for data transfer or network communication that bypasses CPU, goes from one machine to another without any CPU interference. This can allow GPUs to communicate with each other over network without CPU, thus reducing latency. 
+Remote Data Memory Access allows for data transfer or network communication that bypasses CPU, goes from one machine to another without any CPU interference. This can allow GPUs to communicate with each other over network without CPU, thus reducing latency.
 
 This technology can help in creating GPU clusters which are all connected with each other, called supercluster.
 

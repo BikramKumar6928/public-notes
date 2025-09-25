@@ -1,4 +1,4 @@
-#ruby #notes 
+#ruby #notes
 
 ## Variables
 
@@ -22,7 +22,7 @@ end
 ### Class Variables
 
 ```ruby
-class Customer 
+class Customer
 	@@no_of_customers = 0 # The name must begin with `@@`.
 end
 ```
@@ -56,12 +56,12 @@ end
 
 ```ruby
 class Customer
-	@@no_of_customers = 0 
-	def initialize(id, name, addr) 
+	@@no_of_customers = 0
+	def initialize(id, name, addr)
 		@cust_id = id # the instance variable name must begin with a `@`
-		@cust_name = name 
-		@cust_addr = addr 
-	end 
+		@cust_name = name
+		@cust_addr = addr
+	end
 end
 ```
 
@@ -89,20 +89,20 @@ This is a valid number
 ### Arrays
 
 ```ruby
-ary = [ "fred", 10, 3.14, "This is a string", "last element", ] 
-ary.each do |i| 
-	puts i 
+ary = [ "fred", 10, 3.14, "This is a string", "last element", ]
+ary.each do |i|
+	puts i
 end
 ```
 
-### Hashes 
+### Hashes
 
 Hashes behave like maps in Java.
 
 ```ruby
-hsh = colors = { "red" => 0xf00, "green" => 0x0f0, "blue" => 0x00f } 
+hsh = colors = { "red" => 0xf00, "green" => 0x0f0, "blue" => 0x00f }
 hsh.each do |key, value|
-	print key, " is ", value, "\n" 
+	print key, " is ", value, "\n"
 end
 ```
 
@@ -111,8 +111,8 @@ end
 Ranges express a range of numbers
 
 ```ruby
-(10..15).each do |n| 
-	print n, ' ' 
+(10..15).each do |n|
+	print n, ' '
 end
 ```
 
@@ -126,7 +126,7 @@ end
 ### Logical Operators
 
 - `<=>` : Combined comparison operator. Returns 0 if first operand equals second, 1 if first operand is greater than the second and -1 if first operand is less than the second.
-  
+
 	Example: `10 <=> 20` returns `-1` .
 
 - `.eql?` : True if the receiver and argument have both the same type and equal values.
@@ -135,7 +135,7 @@ end
 
 - `equal?` : True if the receiver and argument have the same object id.
 
-	Example: if aObj is duplicate of bObj then aObj == bObj is true, 
+	Example: if aObj is duplicate of bObj then aObj == bObj is true,
 	a.equal? bObj is false
 	but a.equal? aObj is true.
 

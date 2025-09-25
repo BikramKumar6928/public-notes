@@ -1,4 +1,4 @@
-#ai #notes 
+#ai #notes
 
 # What is Deep Learning
 
@@ -12,7 +12,7 @@ The data is understood by the ANN (Artificial Neural Network) by creating an int
 Data Processing can be done in parallel, so large amount of data can be processed in a small amount of time.
 # Deep Learning Data Types (with Examples and algorithms)
 
-- images 
+- images
 	- Example -> Image classification, Object detection -> CNN
 	- Example -> Image Generation -> Transformers, GANs or diffusion models
 - videos
@@ -30,12 +30,12 @@ In ANN, we assign weights to the connection between neurons. Weighted inputs are
 The ANN is comprised of input layer, hidden layers and output layers. There can be >= 0 number of hidden layers in an ANN.
 ### Neurons
 
-Neurons are computational units which accept an input and produce an output. 
+Neurons are computational units which accept an input and produce an output.
 ### Weights
 
 Weights determine the strength of connection between neurons.
 ### Activation function
- 
+
 Activation functions work on the weighted sum of inputs to a neuron and produce an output.
 ### Bias
 Bias is an additional input to the neuron that allows a certain degree of flexibility.

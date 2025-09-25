@@ -1,4 +1,4 @@
-#ai #notes 
+#ai #notes
 
 AI is capability of machines to mimic the cognitive abilities and problem-solving capabilities of human intelligence.
 # Why is AI needed
