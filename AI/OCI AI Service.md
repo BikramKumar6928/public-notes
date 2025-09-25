@@ -11,3 +11,9 @@
 Converts audio to text transcription. It makes transcribed text more readable to resemble how humans write. Example => This laptop costs one thousand three hundred and fifty-five dollars -> This laptop cost $1,355.
 
 It performs profanity filter.
+
+# OCI Vision
+
+Image classification
+Object detection
+Document AI
