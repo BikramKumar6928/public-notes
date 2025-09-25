@@ -67,6 +67,11 @@ Another feature is Data Science jobs which enable you to define and run a repeat
 
 ![[nvidia-gpu-comparison.png]]
 
-RDMA
+# GPU Supercluster
 
-Remote Data Memory Access allows netw
+## RDMA
+
+Remote Data Memory Access allows for data transfer or network communication that bypasses CPU, goes from one machine to another without any CPU interference. This can allow GPUs to communicate with each other over network without CPU, thus reducing latency. 
+
+This technology can help in creating GPU clusters which are all connected with each other, called supercluster.
+
