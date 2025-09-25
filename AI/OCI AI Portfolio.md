@@ -75,3 +75,22 @@ Remote Data Memory Access allows for data transfer or network communication that
 
 This technology can help in creating GPU clusters which are all connected with each other, called supercluster.
 
+## NVLink
+
+Used to connect NVidia GPUs together.
+
+## Network Fabric
+
+A network that provides non-blocking bi-directional connection between GPU nodes.
+
+## Clos Network
+
+Clos Network is a kind of multi-stage network that allows connecting large number of GPUs together. It consists of 3 smaller switches that allow entry to network, transfer within the network and out of the network. This enables us to not connect all GPUs together directly (as that requires `n * n` connections), but still allows all GPUs to talk to each other.
+
+A buffer is added to all the switches in network to account for network latency so that there is no loss of data.
+
+There are multiple GPUs in a single block and these blocks are connected with multiple other blocks.
+
+Latency is about 6-7 microseconds within a block and about 20 microseconds across multiple blocks.
+
+There are network locality hints in the cluster which means the users can choose GPUs within the same rack while deploying. This allows the user to have most of their workflow within the same rack, thus having less latency for most use cases. This has an added benefit of avoiding flow collisions, when multiple connections are flowing data from the same switch, thus leading to delays.
